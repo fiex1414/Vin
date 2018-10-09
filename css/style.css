@@ -10,7 +10,7 @@ body {
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 370px auto 200px;
+    grid-template-rows: 350px auto 200px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -24,7 +24,8 @@ header {
     
     }
 #top-bar {
-    background-color: rgba(120, 42, 42, 0.753);height: 50px;
+    background-color: rgba(120, 42, 42, 0.753);
+    height: 50px;
     display: flex;
     width:100%;
 
@@ -49,8 +50,14 @@ nav ul li a {
     font-size: 16px;
 }
 
+nav ul li:first-child {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
 nav ul li:last-child {
-    padding-left: 25px;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
 
@@ -66,7 +73,10 @@ nav ul li:last-child {
     color: #ffffff;
 }
 
+#social_links i:hover {
+    font-size: 22px;
 }
+
 ul {
 
     list-style-type: none;
@@ -75,12 +85,20 @@ ul {
 }
 ul li{
     display: flex;
-  
-
+    height: 35px;
+    width: 45px;
 }
+
 ul li a {
     color: #eeeeee;
 }
+
+ul li a:hover {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 
 #search {
     color: #ffff;
@@ -107,10 +125,20 @@ main {
 #left_filter {
     grid-template-columns: 1/2;
     height: auto;
+    background-color: rgba(156, 86, 86, 0.466);
+    margin-top: -10px;
+    padding-top: 20px;
+    margin-bottom: -100px;
+    
+    
 }
 
 #left_filter a {
     color: #000000;
+}
+
+#left_filter a:hover {
+    text-decoration: underline;
 }
 
 #wine_type {
@@ -161,6 +189,7 @@ main {
   .product #product_title { 
     color:#222222;
     text-transform: uppercase;
+    margin-bottom: -10px;
 }
 
 #product_title h2 {
@@ -171,7 +200,6 @@ main {
 
 .product #product_price {
     font-size: 14px;
-    margin-bottom: 20px;
     color: #000000;
 }
 
