@@ -32,6 +32,13 @@ header {
 }
 #logo {
     flex-grow: 1;
+    
+}
+
+#logo img {
+    padding: 5px 0 0 5px;
+    height: 100px;
+    width: auto;
 }
 nav {
     flex-grow: 40;
@@ -241,7 +248,12 @@ a:link {
     padding: 0 10px;
 }
 
-#arrows {
+#leftArrow {
+    color: #000000;
+    padding-top: 5px;
+}
+
+#rigthArrow {
     color: #000000;
     padding-top: 5px;
 }
@@ -249,6 +261,6 @@ a:link {
 footer {
     background-color: #782A2A;
     grid-area: ft;
-}
+    }
 
 
