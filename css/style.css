@@ -168,7 +168,11 @@ a:link {
     background-color: rgba(120, 42, 42, 0.685);
 }
 
-#page_number {}
+#page_number {
+    text-align: center;
+    display: flex;
+
+}
 
 
 
