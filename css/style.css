@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* width:960px; */
+    background-color: #ffffff;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 370px auto 200px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn mn mn mn"
+    "ft ft ft ft ft ft ft ft ft ft";
+}
+
+header {
+    grid-area: hd;
+    }
+
+#header-image {
+    background-image: url("../img/france.jpg");
+    background-size: cover;
+    height: 350px;
+    width: auto;
+    }
+
+main {
+    grid-column: 1/11;
+    display: grid;
+    grid-gap: 10px;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-template-columns: repeat(10, 1fr);
+    }
+
+#left_filter {
+    grid-template-columns: 1/2;
+    height: auto;
+}
+
+#wine_type {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 0 5px 5px;
+}
+
+#red_wine, #white_wine, #rose_wine {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0 0 0 18px;
+}
+
+#product_area {
+    grid-column: span 9;
+    grid-gap: 40px;
+    display: grid !important;
+    grid-template-rows: repeat(3, minmax(200px, auto)) ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); }
+
+.product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.product:hover {
+    border: 1px solid #000000;
+}
+
+#product_img {
+       
+    background-color: #fff;
+    padding-bottom:10px;
+    width: 70%;
+    
+}
+.product #product_img img {
+  background-size: contain;
+  width: 100%; 
+}
+
+  .product #product_title {
+    margin:15px 0 10px 0;
+    color:#222222;
+    text-transform: uppercase;
+    font-size:12px;
+}
+
+.product #product_price {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+.product #product_buy {
+    margin:10px 0 20px 0; 
+   
+  }
+  .product #product_buy a {
+    padding:8px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #782A2A; 
+    font-size: 15px;
+    border-radius: 20px;   
+}
+
+    .product #product_buy a:hover {
+    border: 1px solid rgb(63, 22, 22);
+    background-color: rgba(120, 42, 42, 0.685);
+}
+
+
+
+/*border: 1px solid #000000;*/
