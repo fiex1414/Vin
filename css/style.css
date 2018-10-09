@@ -34,7 +34,7 @@ header {
     flex-grow: 1;
 }
 nav {
-    flex-grow: 20;
+    flex-grow: 40;
 }
 
 nav ul {
@@ -161,7 +161,9 @@ main {
     grid-gap: 40px;
     display: grid !important;
     grid-template-rows: repeat(3, minmax(200px, auto)) ;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); }
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
+    margin-top: 20px;
+}
 
 .product {
     display: flex;
