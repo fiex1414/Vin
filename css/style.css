@@ -19,7 +19,55 @@ body {
 
 header {
     grid-area: hd;
+    display: flex;
+    
     }
+#top-bar {
+    background-color: rgba(120, 42, 42, 0.753);height: 50px;
+    display: flex;
+    width:100%;
+
+}
+#logo {
+    flex-grow: 1;
+}
+nav {
+    flex-grow: 20;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding-top: 15px;
+}
+
+nav ul li:last-child {
+    padding-left: 30px;
+}
+
+
+#social_links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+ul {
+
+    list-style-type: none;
+  
+
+}
+ul li{
+    display: flex;
+  
+
+}
+ul li a {
+    color: #eeeeee;
+}
 
 #header-image {
     background-image: url("../img/france.jpg");
@@ -94,6 +142,7 @@ main {
 .product #product_price {
     font-size: 14px;
     margin-bottom: 10px;
+    color: #000000;
 }
 
 a:link {
@@ -118,6 +167,8 @@ a:link {
     border: 1px solid rgb(63, 22, 22);
     background-color: rgba(120, 42, 42, 0.685);
 }
+
+#page_number {}
 
 
 
