@@ -90,6 +90,10 @@ main {
     height: auto;
 }
 
+#left_filter a {
+    color: #000000;
+}
+
 #wine_type {
     font-weight: bold;
     font-size: 14px;
@@ -171,9 +175,12 @@ a:link {
 #page_number {
     text-align: center;
     display: flex;
+    grid-column: 6/7;
+    
+}
 
+#page_number p {
+    padding: 0 10px;
 }
 
 
-
-/*border: 1px solid #000000;*/
