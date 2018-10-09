@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* width:960px; */
+    background-color: #ffffff;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 420px auto 200px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn mn mn mn"
+    "ft ft ft ft ft ft ft ft ft ft";
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    
+    }
+#top-bar {
+    background-color: rgba(120, 42, 42, 0.753);height: 50px;
+    display: flex;
+    width:100%;
+
+}
+#logo {
+    flex-grow: 1;
+}
+nav {
+    flex-grow: 20;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding-top: 15px;
+}
+
+nav ul li:last-child {
+    padding-left: 25px;
+}
+
+
+#social_links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+}
+
+#social_links i {
+  /*  padding: 18px 15px 15px 0; */
+    color: #ffffff;
+}
+label.mdl-button.mdl-js-button.mdl-button--icon {
+    top:0px !important;
+}
+
+ul {
+
+    list-style-type: none;
+  
+
+}
+ul li{
+    display: flex;
+  
+
+}
+ul li a {
+    color: #eeeeee;
+}
+
+#search {
+    color: #ffff;
+}
+
+#header-image {
+    background-image: url("../img/france.jpg");
+    background-size: cover;
+    height: 420px;
+    width: auto;
+    }

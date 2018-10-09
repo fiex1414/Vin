@@ -79,8 +79,11 @@ ul li a {
 
 #search {
     color: #ffff;
+    padding-right: 10px;
 }
-
+i.material-icons {
+    top:-6px !important;
+}
 #header-image {
     background-image: url("../img/france.jpg");
     background-size: cover;
@@ -193,7 +196,7 @@ a:link {
     grid-column: 6/7;
     width: 150px;
     margin-top: 50px;
-    
+    justify-content: center;
 }
 
 #page_number p {
