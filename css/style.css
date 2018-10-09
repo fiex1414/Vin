@@ -15,6 +15,7 @@ body {
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
     "ft ft ft ft ft ft ft ft ft ft";
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 header {
@@ -44,8 +45,12 @@ nav ul li {
     padding-top: 15px;
 }
 
+nav ul li a {
+    font-size: 16px;
+}
+
 nav ul li:last-child {
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 
@@ -53,6 +58,14 @@ nav ul li:last-child {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+    font-size: 17px;
+}
+
+#social_links i {
+    padding: 18px 15px 15px 0;
+    color: #ffffff;
+}
+
 }
 ul {
 
@@ -69,6 +82,13 @@ ul li a {
     color: #eeeeee;
 }
 
+#search {
+    color: #ffff;
+    padding-right: 10px;    
+}
+i.material-icons {
+    top:-6px !important;
+}
 #header-image {
     background-image: url("../img/france.jpg");
     background-size: cover;
@@ -77,12 +97,11 @@ ul li a {
     }
 
 main {
-    grid-column: 1/11;
-    display: grid;
-    grid-gap: 10px;
-    padding-top: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    grid-template-columns: repeat(10, 1fr);
+    grid-column: 1/11 !important;
+    display: grid !important;
+    grid-gap: 10px !important;
+    padding-top: 10px !important;
+    grid-template-columns: repeat(10, 1fr) !important;
     }
 
 #left_filter {
@@ -95,14 +114,17 @@ main {
 }
 
 #wine_type {
-    font-weight: bold;
-    font-size: 14px;
     margin: 0 0 5px 5px;
+}
+
+#wine_type a {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #red_wine, #white_wine, #rose_wine {
     font-size: 12px;
-    line-height: 17px;
+    line-height: 20px;
     margin: 0 0 0 18px;
 }
 
@@ -136,16 +158,20 @@ main {
   width: 100%; 
 }
 
-  .product #product_title {
-    margin:15px 0 10px 0;
+  .product #product_title { 
     color:#222222;
     text-transform: uppercase;
-    font-size:12px;
 }
+
+#product_title h2 {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
 
 .product #product_price {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #000000;
 }
 
@@ -176,11 +202,23 @@ a:link {
     text-align: center;
     display: flex;
     grid-column: 6/7;
-    
+    width: 150px;
+    margin-top: 50px;
+    justify-content: center;
 }
 
 #page_number p {
     padding: 0 10px;
+}
+
+#arrows {
+    color: #000000;
+    padding-top: 5px;
+}
+
+footer {
+    background-color: #782A2A;
+    grid-area: ft;
 }
 
 
