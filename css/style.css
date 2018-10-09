@@ -15,6 +15,7 @@ body {
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
     "ft ft ft ft ft ft ft ft ft ft";
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 header {
@@ -42,6 +43,10 @@ nav ul {
 
 nav ul li {
     padding-top: 15px;
+}
+
+nav ul li a {
+    font-size: 16px;
 }
 
 nav ul li:last-child {
@@ -79,7 +84,7 @@ ul li a {
 
 #search {
     color: #ffff;
-    padding-right: 10px;
+    padding-right: 10px;    
 }
 i.material-icons {
     top:-6px !important;
@@ -96,7 +101,6 @@ main {
     display: grid !important;
     grid-gap: 10px !important;
     padding-top: 10px !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     grid-template-columns: repeat(10, 1fr) !important;
     }
 
@@ -110,14 +114,17 @@ main {
 }
 
 #wine_type {
-    
-    font-size: 14px;
     margin: 0 0 5px 5px;
+}
+
+#wine_type a {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #red_wine, #white_wine, #rose_wine {
     font-size: 12px;
-    line-height: 17px;
+    line-height: 20px;
     margin: 0 0 0 18px;
 }
 
@@ -158,12 +165,13 @@ main {
 
 #product_title h2 {
     font-size: 18px !important;
+    font-weight: bold;
 }
 
 
 .product #product_price {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #000000;
 }
 
