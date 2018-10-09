@@ -45,7 +45,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 
@@ -53,10 +53,11 @@ nav ul li:last-child {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+    font-size: 17px;
 }
 
 #social_links i {
-    padding-top: 15px;
+    padding: 18px 15px 15px 0;
     color: #ffffff;
 }
 
@@ -77,8 +78,7 @@ ul li a {
 }
 
 #search {
-
-    color: #ffffff;
+    color: #ffff;
 }
 
 #header-image {
