@@ -1,0 +1,206 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* width:960px; */
+    background-color: #ffffff;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 350px auto 200px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn mn mn mn"
+    "ft ft ft ft ft ft ft ft ft ft";
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    
+    }
+#top-bar {
+    background-color: rgba(120, 42, 42, 0.753);
+    height: 50px;
+    display: flex;
+    width:100%;
+
+}
+#logo {
+    flex-grow: 1;
+    
+}
+
+#logo img {
+    padding: 5px 0 0 5px;
+    height: 100px;
+    width: auto;
+}
+nav {
+    flex-grow: 40;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding-top: 15px;
+}
+
+nav ul li a {
+    font-size: 16px;
+}
+
+nav ul li:first-child {
+    padding-right: 13px;
+    padding-left: 13px;
+}
+
+nav ul li:last-child {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+
+#social_links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+}
+
+#social_links i {
+    padding: 18px 15px 15px 0;
+    color: #ffffff;
+}
+
+#social_links i:hover {
+    font-size: 22px;
+}
+
+ul {
+
+    list-style-type: none;
+  
+
+}
+ul li{
+    display: flex;
+    height: 35px;
+    width: 45px;
+}
+
+ul li a {
+    color: #eeeeee;
+}
+
+ul li a:hover {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#search {
+    color: #ffff;
+    padding-right: 10px;    
+}
+i.material-icons {
+    top:-6px !important;
+}
+#header-image {
+    background-image: url("../img/france.jpg");
+    background-size: cover;
+    height: 350px;
+    width: auto;
+    }
+
+main {
+    grid-area: mn;
+    grid-column: 1/11 !important;
+    display: grid !important;
+    grid-gap: 10px !important;
+    padding-top: 10px !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+    }
+
+
+
+    
+    #product_img {
+        background-color: #fff;
+        width: 70%;
+        width: 300px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        
+    }
+    #product_img img {
+      background-size: contain;
+      width: 100%; 
+    }
+    
+    #product_details {
+        border: 1px solid #000000;
+        border-radius: 20px;
+    }
+
+    #product_price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #222222;
+    }
+
+    #product_title { 
+        color:#222222;
+        text-transform: uppercase;
+    }
+
+    #product_title h2 {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    #product_description {
+
+    }
+
+    #product_type p {
+        font-weight: bold;
+    }
+
+    #product_year p {
+        font-weight: bold;
+    }
+
+    #product_buy {
+        margin:10px 0 20px 0; 
+       
+      }
+      #product_buy a {
+        padding:8px 15px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #782A2A; 
+        font-size: 15px;
+        border-radius: 20px;   
+    }
+    
+        #product_buy a:hover {
+        border: 1px solid rgb(63, 22, 22);
+        background-color: rgba(120, 42, 42, 0.685);
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    #product_stock p {
+        font-size: 10px;
+    }

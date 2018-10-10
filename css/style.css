@@ -10,7 +10,7 @@ body {
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 350px auto 200px;
+    grid-template-rows: 300px auto 200px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -117,7 +117,7 @@ i.material-icons {
 #header-image {
     background-image: url("../img/france.jpg");
     background-size: cover;
-    height: 350px;
+    height: 300px;
     width: auto;
     }
 
