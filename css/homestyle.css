@@ -139,12 +139,62 @@ main {
     grid-area: mn;
 }
 
+.box {
+    background-color: #ddd;
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+  }
+  
+  .box:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+    color: #000;
+  }
+  
+      .wrapper {
+          width: auto;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+      }
+
+#zigzag_1 {
+background-image: url("../img/zigzag_1.jpg");
+background-size: cover;
+}
+
+#zigzag_3 {
+background-image: url("../img/zigzag_3.jpg");
+background-size: cover;
+}
+
+#zigzag_5 {
+background-image: url("../img/zigzag_5.jpg");
+background-size: cover;
+}
+
+#zigzag_7 {
+background-image: url("../img/zigzag_2.jpg");
+background-size: cover;
+}
+
+#zigzag_9 {
+background-image: url("../img/zigzag_4.jpg");
+background-size: cover;
+}
+
+#zigzag_text p {
+font-size: 40px;
+text-align: center;
+font-family: 'Cookie', cursive;
+margin: 85px;
+}
+
 #barrels {
     background-image: url("../img/barrels.jpg");
     background-size: cover;
     height: 450px;
     width: auto;
-    padding-top: 40px; 
+    padding-top: 60px; 
 }
 
 #barrels_div {
@@ -152,9 +202,11 @@ main {
 }
 
 #barrels_div p {
-    color: #fff;
+    color: rgb(247, 247, 247);
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 10px 0;
+    font-weight: bold;
 }
 
 
@@ -164,3 +216,4 @@ footer {
     background-color: #782A2A;
     grid-area: ft;
     }
+
