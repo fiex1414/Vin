@@ -193,21 +193,32 @@ main {
         font-size: 12px;
     }
 
-    #product_year p {
-        font-weight: bold;
-        margin-left: 30px;
-        font-style: italic;
-        margin-top: -22px;
-        font-size: 12px;
-    }
-
     #product_buy {
-        margin:120px 0 20px 0;
+        margin:130px 55px 20px 0;
         text-align: center;
+        display: flex;
+        justify-content: center;
        
       }
+
+      input{
+        width: 40px;
+        border-radius: 20px;
+        border: 1px solid rgba(120, 42, 42, 0.308);
+        text-align: center; 
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    textarea {
+    
+    }
       #product_buy a {
-        padding:8px 15px;
+        padding:8px 35px;
         color: #ffffff;
         text-decoration: none;
         background-color: #782A2A; 
