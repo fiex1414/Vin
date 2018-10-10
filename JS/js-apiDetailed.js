@@ -1,5 +1,7 @@
 var id = document.URL.split('=')[1];
-postList()
+var item;
+
+postList();
 
 function postList() {
     $("#product_area").empty();
@@ -8,6 +10,7 @@ function postList() {
         type: 'GET',
         dataType: 'json',
         success: function (posts) {
+            item = posts;
             $("#product_details").empty().append(postBuildTableRow(posts));
         }
     });
@@ -15,7 +18,7 @@ function postList() {
 
 function postBuildTableRow(post) {
     var ret = "<div id=\"product_price\">\n" +
-        "<h1>" + post.price + " DKK</h1>\n" +
+        "<h1>" + post.price + "DKK</h1>\n" +
         "</div>\n" +
         "<div id=\"product_title\">\n" +
         "<h2>" + post.name + "</h2>\n" +
@@ -25,20 +28,50 @@ function postBuildTableRow(post) {
         "<br/>\n" +
         "</p>\n" +
         "</div>\n" +
-        "\n" +
         "<div id=\"product_type\">\n" +
         "<p>Type: " + post.type.name + "</p>\n" +
         "</div>\n" +
-        "\n" +
-        "<div id=\"product_year\">\n" +
-        "<p>Year: 1985</p>\n" +
-        "</div>\n" +
-        "\n" +
         "<div id=\"product_buy\">\n" +
-        "<a href=\"#\">Add to bag</a>\n" +
+        "<div id=\"quantity\">\n" +
+        "<input type=\"number\" id='buy_number' value='1'>\n" +
+        "</div>\n" +
+        "<a onclick='clickBuy()'>Buy</a>\n" +
         "</div>\n" +
         "<div id=\"product_stock\">\n" +
-        "<p>8 in stock</p>\n" +
+        "<p>" + post.stock + " in stock</p>\n" +
         "</div>";
     return ret;
 }
+
+function clickBuy() {
+    updateStock($("#buy_number").val());
+}
+
+function updateStock(numToBuy) {
+
+    var stock = item.stock - numToBuy;
+    console.log(stock);
+
+    $.ajax({
+        url: "https://winewebshop.azurewebsites.net/api/wines/" + id,
+        type: 'PUT',
+        data: JSON.stringify({
+            "id" : item.id,
+            "name": item.name,
+            "typeId": item.type.TypeId,
+            "price": item.price,
+            "description": item.description,
+            "stock": stock}),
+        processData: false,
+        contentType: 'application/json',
+        success: function (comments) {
+            console.log("Yiiiaaaahhhhaaaaaa");
+            postList();
+
+        }
+    });
+
+
+}
+
+
