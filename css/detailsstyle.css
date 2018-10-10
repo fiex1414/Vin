@@ -10,7 +10,7 @@ body {
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 350px 600px 200px;
+    grid-template-rows: 340px 450px 200px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -117,7 +117,7 @@ i.material-icons {
 #header-image {
     background-image: url("../img/france.jpg");
     background-size: cover;
-    height: 350px;
+    height: 340px;
     width: auto;
     }
 
@@ -139,7 +139,7 @@ main {
         border-radius: 20px;
         height: 400px;
         grid-column: 3/6;
-        margin-top: -150px;
+        margin:-110px auto 0px auto;
         
         
     }
@@ -155,7 +155,7 @@ main {
         background-color: #ffffffaf;
         height: 400px;
         grid-column: 6/9;
-        margin-top: -100px;
+        margin: -60px auto 0px auto;
     
     }
 
@@ -176,12 +176,12 @@ main {
         font-size: 15px !important;
         font-weight: bold;
         margin-left: 30px;
-        margin-top: -20px;
+        margin-top: -22px;
     }
 
     #product_description p {
         margin-left: 30px;
-        margin-top: -20px;
+        margin-top: -22px;
         font-size: 12px;
         line-height: 17px;
     }
@@ -197,12 +197,12 @@ main {
         font-weight: bold;
         margin-left: 30px;
         font-style: italic;
-        margin-top: -20px;
+        margin-top: -22px;
         font-size: 12px;
     }
 
     #product_buy {
-        margin:100px 0 20px 0;
+        margin:120px 0 20px 0;
         text-align: center;
        
       }
@@ -229,3 +229,8 @@ main {
         text-align: center;
         margin-top: -15px;
     }
+
+    footer {
+        background-color: #782A2A;
+        grid-area: ft;
+        }
