@@ -81,7 +81,7 @@ $("#red_wine").on("click", function () {
     } else if (filteringId !== 1) {
         pageNr = 1;
         orderBy(pageNr, 1);
-        filteringId = 1
+        filteringId = 1;
     }
 });
 
