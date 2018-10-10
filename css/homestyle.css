@@ -121,12 +121,17 @@ i.material-icons {
     width: auto;
     }
 
+    #photo_text p {
+        color: #ffffff;
+    }
+
 main {
     grid-area: mn;
     grid-column: 1/11 !important;
     display: grid !important;
     grid-template-columns: repeat(10, 1fr) !important;
     }
+
 
 
 
