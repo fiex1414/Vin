@@ -1,16 +1,14 @@
 var id = document.URL.split('=')[1];
+postList()
 
-function postList(pageNr) {
-    if (pageNr <= 0) return;
-    if (pageNr > totalPages) return;
-
+function postList() {
     $("#product_area").empty();
     $.ajax({
         url: 'https://winewebshop.azurewebsites.net/api/wines/' + id,
         type: 'GET',
         dataType: 'json',
         success: function (posts) {
-            postBuildTableRow(posts);
+            $("#product_details").empty().append(postBuildTableRow(posts));
         }
     });
 }
@@ -20,19 +18,16 @@ function postBuildTableRow(post) {
         "<h1>" + post.price + " DKK</h1>\n" +
         "</div>\n" +
         "<div id=\"product_title\">\n" +
-        "<h2>Bourgogne</h2>\n" +
+        "<h2>" + post.name + "</h2>\n" +
         "</div>\n" +
         "<div id=\"product_description\">\n" +
-        "<p>Text about product here\n" +
+        "<p>" + post.description +
         "<br/>\n" +
-        "Text about product here\n" +
-        "<br/>\n" +
-        "Text about product here\n" +
         "</p>\n" +
         "</div>\n" +
         "\n" +
         "<div id=\"product_type\">\n" +
-        "<p>Type: Red Wine</p>\n" +
+        "<p>Type: " + post.type.name + "</p>\n" +
         "</div>\n" +
         "\n" +
         "<div id=\"product_year\">\n" +
