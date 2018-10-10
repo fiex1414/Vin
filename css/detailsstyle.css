@@ -10,7 +10,7 @@ body {
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 350px auto 200px;
+    grid-template-rows: 350px 600px 200px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -125,9 +125,8 @@ main {
     grid-area: mn;
     grid-column: 1/11 !important;
     display: grid !important;
-    grid-gap: 10px !important;
-    padding-top: 10px !important;
     grid-template-columns: repeat(10, 1fr) !important;
+    background-color: #ebc6c6;
     }
 
 
@@ -135,26 +134,37 @@ main {
     
     #product_img {
         background-color: #fff;
-        width: 70%;
+        width: 100%;
         width: 300px;
-        border: 1px solid #000000;
         border-radius: 20px;
+        height: 400px;
+        grid-column: 3/6;
+        margin-top: -150px;
+        
         
     }
     #product_img img {
       background-size: contain;
-      width: 100%; 
+      width: 90%;
+      margin-top: 20px;
     }
     
     #product_details {
-        border: 1px solid #000000;
         border-radius: 20px;
+        width: 300px;
+        background-color: #ffffffaf;
+        height: 400px;
+        grid-column: 6/9;
+        margin-top: -100px;
+    
     }
 
-    #product_price {
-        font-size: 20px;
+    #product_price h1{
+        font-size: 25px !important;
         font-weight: bold;
         color: #222222;
+        margin-left: 30px;
+    
     }
 
     #product_title { 
@@ -163,24 +173,37 @@ main {
     }
 
     #product_title h2 {
-        font-size: 18px !important;
+        font-size: 15px !important;
         font-weight: bold;
+        margin-left: 30px;
+        margin-top: -20px;
     }
 
-    #product_description {
-
+    #product_description p {
+        margin-left: 30px;
+        margin-top: -20px;
+        font-size: 12px;
+        line-height: 17px;
     }
 
     #product_type p {
         font-weight: bold;
+        margin-left: 30px;
+        font-style: italic;
+        font-size: 12px;
     }
 
     #product_year p {
         font-weight: bold;
+        margin-left: 30px;
+        font-style: italic;
+        margin-top: -20px;
+        font-size: 12px;
     }
 
     #product_buy {
-        margin:10px 0 20px 0; 
+        margin:100px 0 20px 0;
+        text-align: center;
        
       }
       #product_buy a {
@@ -203,4 +226,6 @@ main {
 
     #product_stock p {
         font-size: 10px;
+        text-align: center;
+        margin-top: -15px;
     }
