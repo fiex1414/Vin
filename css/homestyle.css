@@ -55,6 +55,7 @@ nav ul li {
 
 nav ul li a {
     font-size: 16px;
+    text-decoration: none;
 }
 
 nav ul li:first-child {
@@ -120,9 +121,16 @@ i.material-icons {
     height: 700px;
     width: auto;
     }
+    
+    #photo_text {
+        position: absolute;
+        top: 80px;
+        left: 40px;
+    }
+
 
     #photo_text p {
-        color: #ffffff;
+        color: #000000;        
     }
 
 main {
