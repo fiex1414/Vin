@@ -10,7 +10,7 @@ body {
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 300px auto 200px;
+    grid-template-rows: 700px auto 200px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -115,10 +115,14 @@ i.material-icons {
     top:-6px !important;
 }
 #header-image {
-    background-image: url("../img/france.jpg");
+    background-image: url("../img/frontpic.jpg");
     background-size: cover;
-    height: 300px;
+    height: 700px;
     width: auto;
+    }
+
+    #photo_text p {
+        color: #ffffff;
     }
 
 main {
@@ -127,6 +131,8 @@ main {
     display: grid !important;
     grid-template-columns: repeat(10, 1fr) !important;
     }
+
+
 
 
 
