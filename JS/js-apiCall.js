@@ -104,7 +104,6 @@ $("#rose_wine").on("click", function () {
 });
 
 $("#white_wine").on("click", function () {
-    console.log($("#white_wine").classList);
     if (filteringId === 3) {
         postList(pageNr);
         filteringId = 0;
