@@ -164,8 +164,8 @@ main {
 }
 .red_wine-active a, .white_wine-active a, .rose_wine-active a {
     font-weight: bold;
-
 }
+
 #product_area {
     grid-column: span 9;
     grid-gap: 40px;
