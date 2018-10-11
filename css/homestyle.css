@@ -266,7 +266,7 @@ footer {
 }
 
 #logo_footer img {
-    margin-top: -150px;
+    margin-top: -170px;
     height: 120px;
     width: auto;
 }
@@ -283,7 +283,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     display: grid;
     height: 0;
-    margin-top: -50px;
+    margin-top: -65px;
 }
 
 #about_us {
