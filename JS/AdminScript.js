@@ -67,7 +67,7 @@ $(function () {
     })
 
     $("#saveEdit").click(() => {
-        saveEdits($("#EditID").val());
+        saveEdits($("#editID").val());
     })
 
 })
@@ -118,7 +118,7 @@ function createEditFields(Wine) {
                 <label>Model: <input id="eStock" value="${Wine.stock}"></label>
                 <label>Price: <input id="ePrice" type="number" min="1" value="${Wine.price}"></label>
                 <label>Description: <input id="eDescription" value="${Wine.description}"></label>
-                <label>Gender: <select id="eType" value="${Wine.type.id}">
+                <label>Type: <select id="eType" value="${Wine.type.id}">
                     <option value="1">Red</option>
                     <option value="2">Rosé</option>
                     <option value="3">White</option>
@@ -135,12 +135,13 @@ function saveEdits(id) {
         contentType: 'application/json',
             type: 'PUT',
         data: JSON.stringify({
+            "id": id,
             "name": $("#eName").val(),
             "stock": $("#eStock").val(),
             "price": $("#ePrice").val(),
             "description": $("#eDescription").val(),
             "type": {"id": $("#eType").val()},
-            "picture": $("#eURL").val()
+            "picUrl": $("#eURL").val()
         }),
         processData: false,
         success: data => {
