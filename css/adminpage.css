@@ -1,0 +1,83 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+#headerlabel {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+#load {
+    background-color: rgba(180, 61, 61, 0.712);
+}
+
+#loadAllWines-button {
+    margin: 0 0 10px 0;
+    background-color: rgba(70, 23, 23, 0.74);
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 3px 6px;
+}
+
+#loadAllWines-button:hover {
+    background-color: rgb(53, 17, 17);
+}
+
+#create {
+    background-color: rgba(180, 61, 61, 0.411);
+}
+
+#createWine-button {
+    margin: 0 0 10px 0;
+    background-color: rgba(70, 23, 23, 0.74);
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 3px 6px;
+}
+
+#createWine-button:hover {
+    background-color: rgb(53, 17, 17);
+}
+
+#load_2 {
+    background-color: rgba(180, 61, 61, 0.123);
+}
+
+#editWine-button {
+    margin: 0 0 10px 0;
+    background-color: rgba(70, 23, 23, 0.74);
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 3px 6px;
+}
+
+#editWine-button:hover {
+    background-color: rgb(53, 17, 17);
+}
+
+#saveEdit {
+    margin: 0 0 10px 0;
+    background-color: rgba(70, 23, 23, 0.74);
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 3px 6px;
+}
+
+#saveEdit:hover {
+    background-color: rgb(53, 17, 17);
+}
+
+input {
+    background-color: #dddddd2a;
+    border: 1px solid #000000 !important;
+    padding: 5px; 
+}
+
+#cType {
+    background-color: rgb(53, 17, 17);
+    color: white;
+    padding: 5px;
+}

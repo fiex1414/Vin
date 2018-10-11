@@ -8,7 +8,7 @@ body{
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 700px auto 150px;
+    grid-template-rows: 700px auto 267px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -254,8 +254,9 @@ margin: 85px;
 
 
 footer {
-    background-color: #782A2A;
+    background-color: rgba(120, 42, 42, 0.897);
     grid-area: ft;
+    
     }
 
 #logo_footer {
@@ -265,24 +266,24 @@ footer {
 }
 
 #logo_footer img {
-    padding: 5px 0 0 5px;
+    margin-top: -150px;
     height: 120px;
     width: auto;
 }
 
 #first_part_footer {
-    height: 90px;
+    height: 0;
 }
 
-#grapes img {
-    height: 50px;
-    width: auto;
+#grapes_img {
+    width: 100%; 
 }
 
 #second_part_footer {
     grid-template-columns: repeat(4, 1fr);
     display: grid;
-    height: 50px;
+    height: 0;
+    margin-top: -50px;
 }
 
 #about_us {
@@ -329,11 +330,14 @@ footer {
 
 #social_media_icons {
     text-align: center;
+    padding-right: 50px;
 }
 
+
 #social_media_icons i{
-    font-size: 25px;
+    font-size: 30px;
     color: #000;
+    padding-right:5px;
 }
 
 #social_media_icons a{
