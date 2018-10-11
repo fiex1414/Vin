@@ -1,6 +1,16 @@
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
+
+#logo img{
+    padding: 5px 0 0 5px;
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 #headerlabel {
     font-weight: bold;
     font-size: 20px;
