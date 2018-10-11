@@ -1,8 +1,34 @@
 var pageNr = 1;
 var totalPages;
-var filteringId = 0;
+var filteringId = parseInt(document.URL.split('=')[1]);
+var filters = [$("#red_wine"), $("#white_wine"), $("#rose_wine")];
 
-postList(pageNr);
+
+if (isNaN(filteringId)) {
+    postList(pageNr);
+} else {
+    orderBy(pageNr, filteringId)
+    switch (filteringId) {
+        case 1 :
+            $.each(filters, function (index, filter) {
+                filter.removeClass("red_wine-active")
+            });
+            $("#red_wine").addClass("red_wine-active");
+            break;
+        case 2:
+            $.each(filters, function (index, filter) {
+                filter.removeClass("red_wine-active")
+            });
+            $("#rose_wine").addClass("red_wine-active");
+            break;
+        case 3 :
+            $.each(filters, function (index, filter) {
+                filter.removeClass("red_wine-active")
+            });
+            $("#white_wine").addClass("red_wine-active");
+            break;
+    }
+}
 
 function postList(pageNr) {
     if (pageNr <= 0) return;
@@ -49,7 +75,7 @@ function postListSuccess(posts) {
 
 function postBuildTableRow(post) {
     var ret = "<div class=\"product\">\n" +
-        "<a href=\"details.html?id="+post.id+"\">\n" +
+        "<a href=\"details.html?id=" + post.id + "\">\n" +
         "<center>\n" +
         "<div id=\"product_img\">\n" +
         "<img src=\"img/bourgogne.jpg\" alt=\"\">\n" +
@@ -69,7 +95,6 @@ function postBuildTableRow(post) {
     return ret;
 }
 
-var filters = [$("#red_wine"),$("#white_wine"),$("#rose_wine")];
 
 $("#red_wine").on("click", function () {
     if (filteringId === 1) {
@@ -80,7 +105,7 @@ $("#red_wine").on("click", function () {
         pageNr = 1;
         orderBy(pageNr, 1);
         filteringId = 1;
-        $.each(filters,function (index, filter) {
+        $.each(filters, function (index, filter) {
             filter.removeClass("red_wine-active")
         });
         $("#red_wine").addClass("red_wine-active");
@@ -96,7 +121,7 @@ $("#rose_wine").on("click", function () {
         pageNr = 1;
         orderBy(pageNr, 2);
         filteringId = 2
-        $.each(filters,function (index, filter) {
+        $.each(filters, function (index, filter) {
             filter.removeClass("red_wine-active")
         });
         $("#rose_wine").addClass("red_wine-active");
@@ -112,7 +137,7 @@ $("#white_wine").on("click", function () {
         pageNr = 1;
         orderBy(pageNr, 3);
         filteringId = 3
-        $.each(filters,function (index, filter) {
+        $.each(filters, function (index, filter) {
             filter.removeClass("red_wine-active")
         });
         $("#white_wine").addClass("red_wine-active");
