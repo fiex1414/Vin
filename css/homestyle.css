@@ -3,14 +3,12 @@
     padding:0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    /* width:960px; */
+body{    
     background-color: #ffffff;
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 700px auto 200px;
+    grid-template-rows: 700px auto 267px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd hd hd"
     "mn mn mn mn mn mn mn mn mn mn"
@@ -256,6 +254,104 @@ margin: 85px;
 
 
 footer {
-    background-color: #782A2A;
+    background-color: rgba(120, 42, 42, 0.897);
     grid-area: ft;
+    
     }
+
+#logo_footer {
+    display: grid;
+    justify-content: center;
+    
+}
+
+#logo_footer img {
+    margin-top: -150px;
+    height: 120px;
+    width: auto;
+}
+
+#first_part_footer {
+    height: 0;
+}
+
+#grapes_img {
+    width: 100%; 
+}
+
+#second_part_footer {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    height: 0;
+    margin-top: -50px;
+}
+
+#about_us {
+    text-align: center;
+}
+
+#about_us a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#about_us a:hover {
+    text-decoration: underline;
+}
+
+#contact_us {
+    text-align: center;
+}
+
+#contact_us a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#contact_us a:hover {
+    text-decoration: underline;
+}
+
+#help {
+    text-align: center;
+}
+
+#help a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#help a:hover {
+    text-decoration: underline;
+}
+
+#social_media_icons {
+    text-align: center;
+    padding-right: 50px;
+}
+
+
+#social_media_icons i{
+    font-size: 30px;
+    color: #000;
+    padding-right:5px;
+}
+
+#social_media_icons a{
+    text-decoration: none !important;
+}
+
+#facebook_icon:hover{
+    color: rgb(22, 22, 87);
+}
+
+#twitter_icon:hover{
+    color: rgb(38, 123, 192);
+}
+
+#instagram_icon:hover {
+    color: #ffffff;
+}
