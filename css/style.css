@@ -307,7 +307,6 @@ a:link {
 footer {
     background-color: rgba(120, 42, 42, 0.897);
     grid-area: ft;
-    
     }
 
 #logo_footer {
@@ -327,7 +326,7 @@ footer {
 }
 
 #grapes_img {
-    width: 100%; 
+    width: 100%;
 }
 
 #second_part_footer {

@@ -58,7 +58,7 @@ function updateStock(numToBuy) {
         data: JSON.stringify({
             "id" : item.id,
             "name": item.name,
-            "typeId": item.type.TypeId,
+            "type": item.type,
             "price": item.price,
             "description": item.description,
             "stock": stock}),
